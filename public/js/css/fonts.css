@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'ZoomProNormalMedium';
+    src: url('../fonts/ZoomProNormalMedium.eot');
+    src: url('../fonts/ZoomProNormalMedium.eot') format('embedded-opentype'),
+         url('../fonts/ZoomProNormalMedium.woff2') format('woff2'),
+         url('../fonts/ZoomProNormalMedium.woff') format('woff'),
+         url('../fonts/ZoomProNormalMedium.ttf') format('truetype'),
+         url('../fonts/ZoomProNormalMedium.svg#ZoomProNormalMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'ZoomProWideMedium';
+    src: url('../fonts/ZoomProWideMedium.eot');
+    src: url('../fonts/ZoomProWideMedium.eot') format('embedded-opentype'),
+         url('../fonts/ZoomProWideMedium.woff2') format('woff2'),
+         url('../fonts/ZoomProWideMedium.woff') format('woff'),
+         url('../fonts/ZoomProWideMedium.ttf') format('truetype'),
+         url('../fonts/ZoomProWideMedium.svg#ZoomProWideMedium') format('svg');
+}
+@font-face {
+    font-family: 'ZoomProNormalRegular';
+    src: url('../fonts/ZoomProNormalRegular.eot');
+    src: url('../fonts/ZoomProNormalRegular.eot') format('embedded-opentype'),
+         url('../fonts/ZoomProNormalRegular.woff2') format('woff2'),
+         url('../fonts/ZoomProNormalRegular.woff') format('woff'),
+         url('../fonts/ZoomProNormalRegular.ttf') format('truetype'),
+         url('../fonts/ZoomProNormalRegular.svg#ZoomProNormalRegular') format('svg');
+}
+@font-face {
+    font-family: 'ZoomProExtendedMedium';
+    src: url('../fonts/ZoomProExtendedMedium.eot');
+    src: url('../fonts/ZoomProExtendedMedium.eot') format('embedded-opentype'),
+         url('../fonts/ZoomProExtendedMedium.woff2') format('woff2'),
+         url('../fonts/ZoomProExtendedMedium.woff') format('woff'),
+         url('../fonts/ZoomProExtendedMedium.ttf') format('truetype'),
+         url('../fonts/ZoomProExtendedMedium.svg#ZoomProExtendedMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'ZoomProBrutalMedium';
+    src: url('../fonts/ZoomProBrutalMedium.eot');
+    src: url('../fonts/ZoomProBrutalMedium.eot') format('embedded-opentype'),
+         url('../fonts/ZoomProBrutalMedium.woff2') format('woff2'),
+         url('../fonts/ZoomProBrutalMedium.woff') format('woff'),
+         url('../fonts/ZoomProBrutalMedium.ttf') format('truetype'),
+         url('../fonts/ZoomProBrutalMedium.svg#ZoomProBrutalMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'ZoomProNormalBold';
+    src: url('../fonts/ZoomProNormalBold.eot');
+    src: url('../fonts/ZoomProNormalBold.eot') format('embedded-opentype'),
+         url('../fonts/ZoomProNormalBold.woff2') format('woff2'),
+         url('../fonts/ZoomProNormalBold.woff') format('woff'),
+         url('../fonts/ZoomProNormalBold.ttf') format('truetype'),
+         url('../fonts/ZoomProNormalBold.svg#ZoomProNormalBold') format('svg');
+}
+

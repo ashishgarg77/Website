@@ -1,0 +1,194 @@
+// @light-gray:  #dedede;
+@black-text:  #212121;
+@trans-white: rgba(255, 255, 255, 0.5);
+@time: 0.5s;
+@time-quick: 0.25s;
+
+.noselect
+{
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+.vertical-padding(@size: 5px)
+{
+  padding-top: @size;
+  padding-bottom: @size;
+}
+
+#mini-clndr
+{
+  margin: 0 auto;
+  width: 100%;
+}
+
+#mini-clndr .clndr
+{
+
+
+  .controls
+  {
+    color: #000;
+
+    .clndr-previous-button, .clndr-next-button
+    {
+      width: 15%;
+      .vertical-padding;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      .noselect;
+      .transition(background-color @time);
+      &:hover
+      {
+        background-color: darken(@dark-green, 10%);
+      }
+    }
+    .month
+    {
+      width: 70%;
+      .vertical-padding;
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+
+  .days-container
+  {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  
+
+    .days
+    {
+      position: static;
+      left: 0;
+      width: 344px;
+      height: 300px;
+      .transition(left @time);
+
+      .day, .empty
+      {
+        width: 49px;
+        display: inline-block;
+        .vertical-padding(8px);
+
+        font-size: 12px;
+        // font-weight: 700;
+        text-align: center;
+        color: @black-text;
+
+        border-right: 1px solid @trans-white;
+        border-bottom: 1px solid @trans-white;
+
+        &.event
+        {
+          cursor: pointer;
+          &:hover
+          {
+          }
+        }
+
+        &.adjacent-month
+        {
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      .empty
+      {
+        height: 31px;
+        vertical-align: bottom;
+      }
+
+      .headers
+      {
+        border-top:1.5px solid #000;
+        .vertical-padding;
+
+        .day-header
+        {
+          width: 49px;
+          display: inline-block;
+          margin-top: 15px;
+          text-align: center;
+          color: #000;
+        }
+      }
+    }
+
+    .events
+    {
+      position: static;
+      width: 59%;
+      height: auto;
+      .transition(left @time);
+
+      .headers
+      {
+        position: relative;
+      }
+
+      .event-header
+      {
+        width: 100%;
+        .vertical-padding;
+        text-align: center;
+        color: #000;
+      }
+
+      .x-button
+      {
+        position: absolute;
+        font-size: 80%;
+        top: 7px;
+        left: 20px;
+        cursor: pointer;
+        .transition(color @time-quick);
+        &:hover
+        {
+          color: white;
+        }
+      }
+
+      .events-list
+      {
+        
+
+        .event
+        {
+          .vertical-padding(8px);
+          padding-left: 10px;
+          border-bottom: 1px solid @trans-white;
+          .transition(background-color @time-quick);
+
+          &:hover
+          {
+          
+          }
+
+        
+        }
+      }
+    }
+
+    &.show-events
+    {
+      .days
+      {
+        left: -294px;
+      }
+      .events
+      {
+        left: 0;
+      }
+    }
+  }
+}
